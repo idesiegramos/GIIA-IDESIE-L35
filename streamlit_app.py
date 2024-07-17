@@ -4,9 +4,9 @@ from openai import OpenAI
 # Show title and description.
 st.title("IA de IDESIE Business&Tech School")
 st.write(
-    "This is a simple chatbot that uses OpenAI's GPT-3.5 model to generate responses. "
-    "To use this app, you need to provide an OpenAI API key, which you can get [here](https://platform.openai.com/account/api-keys). "
-    "You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
+    "Esta Inteligencia Artificial te ayudará a con el contenido de las clases impartidas en IDESIE. "
+    "Para usar esta aplicación, solo debes escribir en el chat la infotmación que quieres obtener, como por ejemplo obtener un resumen con los puntos importantes de la clase o resolver otro tipo de dudas relacionadas con el contenido del vídeo. "
+    "Te será de ayuda."
 )
 
 # Ask user for their OpenAI API key via `st.text_input`.
