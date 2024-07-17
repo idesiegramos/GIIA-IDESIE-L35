@@ -1,22 +1,6 @@
 import streamlit as st
 from openai import OpenAI
 
-# CONFIGURACIÓN MODELO LANGCHAIN.
-from openai.chat_models import ChatOpenAI
-
-model_name = "gpt-3.5-turbo"
-
-model = ChatOpenAI(
-    openai_api_key=OPENAI_API_KEY,
-    model=model_name,
-    temperature=0,
-    max_tokens=1000,
-    #top_p=1,
-    #frequency_penalty=0,
-    #presence_penalty=0.6
-)
-# CONFIGURACIÓN MODELO LANGCHAIN.
-
 # Show title and description.
 st.title("HOLA COCACOLA")
 st.write(
