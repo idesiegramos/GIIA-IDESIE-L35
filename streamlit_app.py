@@ -2,7 +2,7 @@ import streamlit as st
 from openai import OpenAI
 
 # CONFIGURACIÓN MODELO LANGCHAIN.
-from langchain_openai.chat_models import ChatOpenAI
+from openai.chat_models import ChatOpenAI
 
 model_name = "gpt-3.5-turbo"
 
