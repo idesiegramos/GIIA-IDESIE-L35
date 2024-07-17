@@ -5,7 +5,7 @@ from openai import OpenAI
 st.title("IA de IDESIE Business&Tech School")
 st.write(
     "Esta Inteligencia Artificial te ayudará a con el contenido de las clases impartidas en IDESIE. "
-    "Para usar esta aplicación, solo debes escribir en el chat la infotmación que quieres obtener, como por ejemplo obtener un resumen con los puntos importantes de la clase o resolver otro tipo de dudas relacionadas con el contenido del vídeo. "
+    "Para usar esta aplicación, solo debes escribir en el chat la información que quieres obtener, como por ejemplo un resumen con los puntos importantes de la clase o resolver otro tipo de dudas relacionadas con el contenido del vídeo. "
     "Te será de ayuda."
 )
 
