@@ -6,7 +6,7 @@ import tempfile
 import whisper
 import pytube
 import re
-import pinecone
+# import pinecone
 
 
 from openai import OpenAI
@@ -18,8 +18,8 @@ from youtube_transcript_api import YouTubeTranscriptApi
 from langchain_openai.embeddings import OpenAIEmbeddings
 from langchain_community.vectorstores import DocArrayInMemorySearch
 from langchain_core.runnables import RunnableParallel, RunnablePassthrough
-from langchain_pinecone import PineconeVectorStore
-from pinecone import Pinecone, ServerlessSpec
+# from langchain_pinecone import PineconeVectorStore
+# from pinecone import Pinecone, ServerlessSpec
 
 
 
