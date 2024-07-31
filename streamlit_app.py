@@ -8,6 +8,7 @@ import pytube
 import re
 import pinecone
 
+
 from openai import OpenAI
 from dotenv import load_dotenv
 from tiktoken import encoding_for_model
@@ -21,36 +22,15 @@ from langchain_pinecone import PineconeVectorStore
 from pinecone import Pinecone, ServerlessSpec
 
 
-# Show title and description.
-st.title("IA de IDESIE Business&Tech School")
-st.write(
-    "Esta Inteligencia Artificial te ayudará a con el contenido de las clases impartidas en IDESIE. "
-    "Para usar esta aplicación, solo debes escribir en el chat la información que quieres obtener, como por ejemplo un resumen con los puntos importantes de la clase o resolver otro tipo de dudas relacionadas con el contenido del vídeo. "
-    "Te será de ayuda."
-)
-
-# Ask user for their OpenAI API key via `st.text_input`.
-# Alternatively, you can store the API key in `./.streamlit/secrets.toml` and access it
-# via `st.secrets`, see https://docs.streamlit.io/develop/concepts/connections/secrets-management
-openai_api_key = st.secrets.api_openai
-if not openai_api_key:
-    st.info("Please add your OpenAI API key to continue.", icon="🗝️")
-
-
-
 
 ################################
 # Secretos
 ################################
 
-# load_dotenv()
-# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-# PINECONE_API_KEY = os.getenv('PINECONE_API_KEY')
+load_dotenv()
 OPENAI_API_KEY = st.secrets.api_openai
-if not OPENAI_API_KEY:
-    st.info("Please add your OpenAI API key to continue.", icon="🗝️")
-else:
-    print("'Secretos' cargados correctamente")
+# PINECONE_API_KEY = os.getenv('PINECONE_API_KEY')
+print("'Secretos' cargados correctamente")
 
 
 
