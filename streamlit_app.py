@@ -50,7 +50,7 @@ OPENAI_API_KEY = st.secrets.api_openai
 if not OPENAI_API_KEY:
     st.info("Please add your OpenAI API key to continue.", icon="🗝️")
 else:
-print("'Secretos' cargados correctamente")
+    print("'Secretos' cargados correctamente")
 
 
 
