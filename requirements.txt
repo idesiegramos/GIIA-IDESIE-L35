@@ -13,8 +13,6 @@ git+https://github.com/openai/whisper.git
 transformers
 torch
 youtube-transcript-api
-langchain_pinecone
-langchain_pinecone-client
 pinecone-client
 langchain_community
 sentence_transformers
